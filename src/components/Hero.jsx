@@ -130,7 +130,7 @@ export default function Hero() {
               View Works
             </button>
             <a
-              href="/public/Rajapandi_Video Editor.pdf"
+              href="/public/resume.pdf"
               className="px-8 py-4 border border-white/20 text-white hover:bg-white/5 text-xs tracking-widest uppercase font-semibold transition-all duration-300 rounded-sm flex items-center gap-2 cursor-pointer active:scale-95"
             >
               <Download className="w-3.5 h-3.5" />
