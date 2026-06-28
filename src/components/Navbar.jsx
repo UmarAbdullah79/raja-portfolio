@@ -28,7 +28,7 @@ export default function Navbar() {
 
       // 2. Active section tracking based on viewport position
       const scrollPosition = window.scrollY + 100; // Offset for navbar height
-      
+
       for (const item of menuItems) {
         const element = document.getElementById(item.id);
         if (element) {
@@ -60,24 +60,23 @@ export default function Navbar() {
   return (
     <>
       <motion.nav
-        className={`fixed top-0 left-0 w-full z-40 transition-all duration-500 ${
-          isScrolled 
-            ? "py-4 bg-bg-main/75 backdrop-blur-md border-b border-white/5 shadow-xl" 
+        className={`fixed top-0 left-0 w-full z-40 transition-all duration-500 ${isScrolled
+            ? "py-4 bg-bg-main/75 backdrop-blur-md border-b border-white/5 shadow-xl"
             : "py-6 bg-transparent"
-        }`}
+          }`}
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
           {/* Logo / Brand */}
-          <button 
+          <button
             onClick={() => handleScrollTo("home")}
             className="flex items-center gap-2 cursor-pointer interactive-logo group"
           >
             <Camera className="w-5 h-5 text-white/70 group-hover:text-white transition-colors duration-300" />
             <span className="font-bold tracking-[0.25em] text-sm uppercase text-white">
-              RP <span className="text-white/40 font-light group-hover:text-white/60 transition-colors duration-300">STUDIOS</span>
+              RAJA PANDI
             </span>
           </button>
 
@@ -87,11 +86,10 @@ export default function Navbar() {
               <button
                 key={item.id}
                 onClick={() => handleScrollTo(item.id)}
-                className={`relative py-1 text-xs tracking-widest uppercase cursor-pointer transition-colors duration-300 ${
-                  activeSection === item.id 
-                    ? "text-white font-medium" 
+                className={`relative py-1 text-xs tracking-widest uppercase cursor-pointer transition-colors duration-300 ${activeSection === item.id
+                    ? "text-white font-medium"
                     : "text-white/50 hover:text-white"
-                }`}
+                  }`}
               >
                 {item.label}
                 {activeSection === item.id && (
@@ -134,9 +132,8 @@ export default function Navbar() {
               <motion.button
                 key={item.id}
                 onClick={() => handleScrollTo(item.id)}
-                className={`text-xl tracking-[0.2em] uppercase cursor-pointer ${
-                  activeSection === item.id ? "text-white font-semibold" : "text-white/50"
-                }`}
+                className={`text-xl tracking-[0.2em] uppercase cursor-pointer ${activeSection === item.id ? "text-white font-semibold" : "text-white/50"
+                  }`}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.05, duration: 0.4 }}
