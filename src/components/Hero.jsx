@@ -130,12 +130,15 @@ export default function Hero() {
               View Works
             </button>
             <a
-              href="/public/resume.pdf"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 border border-white/20 text-white hover:bg-white/5 text-xs tracking-widest uppercase font-semibold transition-all duration-300 rounded-sm flex items-center gap-2 cursor-pointer active:scale-95"
             >
               <Download className="w-3.5 h-3.5" />
               Download Resume
             </a>
+
           </motion.div>
         </div>
 
