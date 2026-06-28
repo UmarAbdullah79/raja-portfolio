@@ -55,7 +55,7 @@ export default function Hero() {
       <div className="absolute bottom-1/4 right-1/10 w-[500px] h-[500px] rounded-full bg-white/[0.01] blur-3xl pointer-events-none" style={{ animationDelay: "2s" }} />
 
       <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-        
+
         {/* Left Side Content */}
         <div className="lg:col-span-7 flex flex-col justify-center text-left order-2 lg:order-1">
           {/* Subtitle tag */}
@@ -130,7 +130,7 @@ export default function Hero() {
               View Works
             </button>
             <a
-              href="#"
+              href="/public/Rajapandi_Video Editor.pdf"
               className="px-8 py-4 border border-white/20 text-white hover:bg-white/5 text-xs tracking-widest uppercase font-semibold transition-all duration-300 rounded-sm flex items-center gap-2 cursor-pointer active:scale-95"
             >
               <Download className="w-3.5 h-3.5" />
@@ -154,7 +154,7 @@ export default function Hero() {
               transition={{ duration: 1.2, delay: 0.5, ease: [0.85, 0, 0.15, 1] }}
               className="absolute inset-0 bg-black z-20 origin-top"
             />
-            
+
             {/* Camera Shutter Ring Overlay */}
             <div className="absolute inset-0 border-[16px] border-black/80 pointer-events-none z-10 transition-all duration-500 group-hover:border-[10px]" />
             <div className="absolute inset-4 border border-white/5 pointer-events-none z-10" />
